@@ -1,0 +1,25 @@
+# rainforest_audio
+
+A post-competition organization of the code used in the competition. Because i find the resources provided by Kaggle (30h free TPU) to be sufficient, most of the code are written in the kernel notebook in kaggle platform (although i am not really a fan of using it)
+
+# What's new?
+
+This solution places at top 9%. However, I did manage to have a single model that reaches  `0.891`. More diversification might result in a better score. My implementations includes some of the following:
+
+1) random resized crop as augmentation
+2) custom channel attention layer + spatial attention layer + CNN blocks inspired by a winner from a similar competition.
+
+# Run 
+
+Run all 7 densenet notebook and generate the data. Place them in their respective data folder. Also, get one of a public [notebook](https://www.kaggle.com/mehrankazeminia/ensembling-0-880-audio-detection-101). All the csv are uploaded in the `/data/` folder. 
+
+To generate the submission, run:
+
+```
+$ make run_submission
+```
+
+# Post-competition
+
+Mask-loss did not worked for me. Have yet to try re-training all my models with Lsoft objective function. Thing that did not work are placed in `archive` folder within the notebook.
+
