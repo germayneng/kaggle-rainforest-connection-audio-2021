@@ -16,3 +16,6 @@
 
 # vscode
 *.vscode
+
+# python version
+*.python-version
