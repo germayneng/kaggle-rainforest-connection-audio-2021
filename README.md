@@ -25,3 +25,4 @@ $ make run_submission
 
 Mask-loss did not worked for me. Have yet to try re-training all my models with Lsoft objective function. Thing that did not work are placed in `archive` folder within the notebook.
 
+I have also added a summary of learning points and experience in a pdf document based on an internal sharing. It is found in `Rainforest Audio Detection.pdf`
