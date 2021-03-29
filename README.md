@@ -1,6 +1,8 @@
-# rainforest_audio
+# Rainforest Connection Species Audio Detection
 
-A post-competition organization of the code used in the competition. Because i find the resources provided by Kaggle (30h free TPU) to be sufficient, most of the code are written in the kernel notebook in kaggle platform (although i am not really a fan of using it)
+> Given animal audio clip, correctly classify them
+
+A post-competition organization of the code used in the competition. Because i find the resources provided by Kaggle (30h free TPU) to be sufficient, most of the code are written in the kernel notebook in kaggle platform (although i am not really a fan of using it). I started using the baseline code written by yosshi999 and made changes along the way, implementing my own model architectures.
 
 # What's new?
 
