@@ -9,7 +9,7 @@ A post-competition organization of the code used in the competition. Because i f
 This solution places at top 9%. However, I did manage to have a single model that reaches  `0.891`. More diversification might result in a better score. My implementations includes some of the following:
 
 1) random resized crop as augmentation
-2) custom channel attention layer + spatial attention layer + CNN blocks inspired by a winner from a similar competition.
+2) custom channel attention layer + spatial attention layer + CNN blocks inspired by a winner from a similar competition. The model design can be found in `rainforest_audio/model.py`
 
 # Run 
 
