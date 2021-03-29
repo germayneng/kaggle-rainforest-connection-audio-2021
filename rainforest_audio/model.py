@@ -146,14 +146,10 @@ class my_model(tf.keras.Model):
 
         # we want to train only the FCL
         # if our config defined None, we will freeze all, else only freeze the first [:layers]
-        if cfg['model_params']['freeze_to'] is None:
-            for layer in self.base_model.layers:
-                layer.trainable = False
-        else:
-            # cfg defaults to :0
-            # means we want to freeze nothing
-            for layer in self.base_model.layers[:0]:
-                layer.trainable = False
+        # cfg defaults to :0
+        # means we want to freeze nothing
+        for layer in self.base_model.layers[:0]:
+            layer.trainable = False
         self.conv1 = ConvBlock(out_channels=base_size*4)
         self.conv = ConvBlock(out_channels=base_size*8)
         self.avg_pool = tf.keras.layers.AveragePooling2D()
